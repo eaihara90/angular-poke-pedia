@@ -1,0 +1,33 @@
+$black: #000;
+$black-light-1: lighten($black, 20%);
+$black-light-2: lighten($black, 40%);
+$black-light-3: lighten($black, 60%);
+$black-light-4: lighten($black, 80%);
+
+$white: #fff;
+
+$box-shadow-close: 0 2px 4px 2px rgba($black, .4);
+$box-shadow-far: 0 2px 3px 2px rgba($black, .3);
+$box-shadow-fartest: 0 2px 2px 2px rgba($black, .2);
+
+$bug: #729F3F;
+$dark: #707070;
+$dragon-1: #53A4CF;
+$dragon-2: #F16E57;
+$electric: #EED535;
+$fairy: #FDB9E9;
+$fighting: #D56723;
+$fire: #FD7D24;
+$flying-1: #3DC7EF;
+$flying-2: #BEBAB9;
+$ghost: #7B62A3;
+$grass: #9BCC50;
+$ground-1: #F7DE3F;
+$ground-2: #AB9842;
+$ice: #51C4E7;
+$normal: #A4ACAF;
+$poison: #B97FC9;
+$psychic: #F366B9;
+$rock: #A38C21;
+$steel: #9EB7B8;
+$water: #4592C4;

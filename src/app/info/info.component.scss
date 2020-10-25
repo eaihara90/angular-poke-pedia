@@ -1,0 +1,162 @@
+@import '../../assets/styles/main.scss';
+
+.info-detail
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    &__default
+    {
+        height: 100%;
+        width: 100%;
+
+        &.opened
+        {
+            width: 33%;
+        }
+    }
+
+    &__status
+    {
+        height: 100%;
+        width: 0%;
+        transition: all .5s ease;
+
+        &.opened
+        {
+            width: 33%;
+        }
+    }
+
+    &__evolution
+    {
+        height: 100%;
+        width: 0%;
+        transition: all .5s ease;
+
+        &.opened
+        {
+            width: 33%;
+        }
+    }
+    // &__default
+    // {
+    //     align-items: center;
+    //     background-color: $black;
+    //     display: flex;
+    //     flex-flow: column nowrap;
+    //     height: 100%;
+    //     justify-content: space-evenly;
+    //     position: relative;
+
+    //     &--header
+    //     {
+    //         background-color: $black;
+    //         color: $white;
+    //         font-size: 2rem;
+    //         text-align: center;
+    //         width: 100%;
+
+    //         & h3
+    //         {
+    //             padding: 1rem 0;
+    //         }
+    //     }
+
+    //     &--img
+    //     {
+    //         border-radius: 50%;
+    //         background-color: $white;
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         margin: 1rem auto;
+    //         height: 20rem;
+    //         width: 20rem;
+
+    //         & img
+    //         {
+    //             display: block;
+    //             max-width: 100%;
+    //             object-fit: cover;
+    //         }
+    //     }
+
+    //     &--types
+    //     {
+            
+    //     }
+
+    //     &--type
+    //     {
+    //         color: $white;
+    //         display: block;
+    //         padding: 1rem 0;
+    //         text-align: center;
+    //     }
+        
+    //     & .btn--details
+    //     {
+    //         position: absolute;
+    //         top: 3%;
+    //         right: 3%;
+    //     }
+    // }
+
+    // &__status
+    // {
+    //     align-items: center;
+    //     background-color: $grass;
+    //     display: flex;
+    //     flex-flow: column nowrap;
+    //     height: 100%;
+    //     justify-content: space-evenly;
+
+    //     &--header
+    //     {
+    //         background-color: $black;
+    //         color: $white;
+    //         font-size: 2rem;
+    //         text-align: center;
+    //         width: 100%;
+
+    //         & h3
+    //         {
+    //             padding: 1rem 0;
+    //         }
+    //     }
+
+    //     &--img
+    //     {
+    //         border-radius: 50%;
+    //         background-color: $white;
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         margin: 1rem auto;
+    //         height: 20rem;
+    //         width: 20rem;
+
+    //         & img
+    //         {
+    //             display: block;
+    //             max-width: 100%;
+    //             object-fit: cover;
+    //         }
+    //     }
+
+    //     &--types
+    //     {
+            
+    //     }
+
+    //     &--type
+    //     {
+    //         color: $white;
+    //         display: block;
+    //         padding: 1rem 0;
+    //         text-align: center;
+    //     }
+    // }
+}

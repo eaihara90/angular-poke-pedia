@@ -1,0 +1,15 @@
+<a [routerLink]="['/pokemon', pokemon.name]" class="item">
+
+    <div class="item-data">
+        <h4 class="item-data__id"># {{ pokemon.id | defaultIdLength }}</h4>
+
+        <p class="item-data__name">{{ pokemon.name | capitalize }}</p>
+
+        <span class="item-data__type"></span>
+    </div>
+
+    <div class="item-img">
+        <img [src]="pokemon.sprites.other.dream_world.front_default" [alt]="pokemon.name">
+    </div>
+    
+</a>

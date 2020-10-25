@@ -1,0 +1,35 @@
+<div class="info-evolution">
+
+    <div class="info-evolution__header">
+        <h3>Evoluções</h3>
+    </div>
+
+    <div class="info-evolution__chain">
+
+        <ng-container *ngIf="evolutions.length > 0; else noEvolution">
+            
+            <div 
+                *ngFor="let pokemon of evolutions" 
+                class="info-evolution__chain-step">
+
+                    <img [src]="pokemon.sprites.other.dream_world.front_default" [alt]="pokemon.name">
+            </div>
+
+        </ng-container>
+
+        <ng-template #noEvolution>
+            <div class="no-evolution">
+                O Pokémon já está em sua forma final.
+            </div>
+        </ng-template>
+
+    </div>
+
+    <div class="info-evolution__types">
+        <span
+            class="info-evolution__type"
+            *ngFor="let type of pokemon.types">
+            {{ type.type.name }}
+        </span>
+    </div>
+</div>

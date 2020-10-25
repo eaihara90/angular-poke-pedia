@@ -1,0 +1,54 @@
+@import '../../assets/styles/main.scss';
+
+.header
+{
+    width: 100%;
+    
+
+    & > *
+    {
+        margin: 1rem 0;
+    }
+
+    &__title
+    {
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &__searchbar
+    {
+        &--form
+        {
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+
+        &--input
+        {
+            border: 1px solid $black-light-2;
+            border-radius: 20px;
+            display: block;
+            font-size: 1.8rem;
+            padding: .5rem 1.5rem;
+            text-align: center;
+            transition: all .5s ease-in-out;
+            transform-origin: center;
+            width: 50%;
+
+            &::placeholder
+            {
+                font-size: 1.6rem;
+                color: $black-light-4;
+            }
+
+            &:focus
+            {
+                width: 100%;
+            }
+        }
+    }
+}

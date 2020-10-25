@@ -1,0 +1,80 @@
+@import '../../../assets/styles/main.scss';
+
+.info-status
+{
+
+    align-items: flex-start;
+    background-color: $white;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    justify-content: flex-start;
+    padding: 2rem;
+
+    &__header
+    {
+        color: $black;
+        font-size: 2rem;
+        margin: 10% 0;
+        text-align: center;
+        width: 100%;
+
+        & h3
+        {
+            padding: 1rem 0;
+        }
+    }
+
+    &__stat
+    {
+        width: 100%;
+        margin: 10% 0;
+
+        &-list
+        {
+            &--item
+            {
+                position: relative;
+            }
+
+            &--label
+            {
+                display: block;
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin: 4rem 0;
+            }
+
+            &--bar
+            {
+                &-front
+                {
+                    display: block;
+                    background-color: darken($grass, 20%);
+                    border-radius: 15px;
+                    height: 1.2rem;
+                    left: 0;
+                    position: absolute;
+                    top: 2rem;
+                }
+                
+                &-back
+                {
+                    border-radius: 15px;
+                    display: block;
+                    background-color: rgba($grass, .5);
+                    height: 1.2rem;
+                    position: absolute;
+                    top: 2rem;
+                    left: 0;
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+
+    
+    
+}

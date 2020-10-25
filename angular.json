@@ -145,6 +145,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "poke-pedia"
+    }
+  },
+  "defaultProject": "poke-pedia",
+  "cli": {
+    "analytics": "b198a695-3d9e-4b05-b5ec-4ee27d4ae21d"
+  }
 }

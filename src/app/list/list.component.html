@@ -1,0 +1,24 @@
+<div class="list"*ngIf="pokemonList.length > 0; else emptyList" >
+
+    <div class="list-item" *ngFor="let pokemon of pokemonList">
+
+        <poke-list-item [pokemon]="pokemon"></poke-list-item>
+        
+    </div>
+
+    <button 
+        class="btn-load"
+        [disabled]="isLoading"
+        (click)="onLoadNextNine()">
+        Carregar mais
+    </button>
+
+</div>
+
+
+
+<ng-template #emptyList>
+
+    <h4>Lista vazia!</h4>
+    
+</ng-template>

@@ -1,0 +1,60 @@
+@import '../../../assets/styles/main.scss';
+
+.item
+{
+    align-items: center;
+    background-color: $white;
+    border-radius: 10px;
+    border: 1px solid $black-light-4;
+    box-shadow: $box-shadow-close;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    padding: 0 2rem;
+    transition: all .2s ease;
+
+    &:hover
+    {
+        transform: translateY(-3px);
+        box-shadow: $box-shadow-fartest;
+    }
+
+    &:active
+    {
+        transform: translateY(-2px);
+        box-shadow: $box-shadow-far;
+    }
+
+    &-data
+    {
+        
+
+        &__id
+        {
+
+        }
+
+        &__name
+        {
+
+        }
+
+        &__type
+        {
+
+        }
+    }
+
+    &-img
+    {   
+        margin-top: -3rem;
+        max-width: 40%;
+
+        & img
+        {
+            display: block;
+            object-fit: cover;
+            max-width: 100%;
+        }
+    }
+}

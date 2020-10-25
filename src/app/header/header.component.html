@@ -1,0 +1,17 @@
+<div class="header">
+    <div class="header__title">
+        <h1>PokéPedia</h1>
+    </div>
+
+    <div class="header__searchbar">
+        <form class="header__searchbar--form"> 
+            <input 
+                type="text"
+                class="header__searchbar--input"
+                name="pokemonName"
+                #filterInput="ngModel"
+                [(ngModel)]="pokemonName"
+                placeholder="Encontre seu Pokémon favorito!">
+        </form>
+    </div>
+</div>

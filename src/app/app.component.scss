@@ -1,0 +1,47 @@
+@import '../assets/styles/main';
+
+.wrapper
+{
+    width: 100%;
+    
+    & .header
+    {
+        
+        margin-left: 30%;
+        width: calc(68% - 1.5rem);
+    }
+
+
+    & .main-content
+    {
+        display: flex;
+        justify-content: space-between;
+        min-height: 85vh;
+        
+
+        & .pokemon-info
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 28%;
+            height: 100vh;
+            transition: all .3s ease;
+            z-index: 1;
+
+            &.opened
+            {
+                width: 100%;
+            }
+        }
+    
+        & .pokemon-list
+        {
+            
+            margin-left: 30%;
+            padding: 3rem 0;
+            width: 68%;
+        }
+    }
+
+}
