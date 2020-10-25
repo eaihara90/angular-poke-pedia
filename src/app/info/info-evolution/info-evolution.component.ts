@@ -15,9 +15,9 @@ import { PokemonService } from 'src/app/shared/services/pokemon.service';
 export class InfoEvolutionComponent implements OnInit, OnDestroy
 {
     @Input() pokemon: Pokemon;
-    private subscription = new Subscription();
     public evolutionChain: EvolutionChain;
     public evolutions: Evolution[] = [];
+    private subscription = new Subscription();
 
     constructor(private pokemonService: PokemonService) { }
 
@@ -138,18 +138,11 @@ export class InfoEvolutionComponent implements OnInit, OnDestroy
 
             const babyPokemon = babyPokemonList[0];
 
+            const happines = babyPokemon.min_happines;
+
             this.evolutions.unshift(babyPokemon);
+
+            this.evolutions[1].min_happines = happines;
         }
-
-        console.log(this.evolutions);
-        
-
-        // this.evolutions.forEach(_pokemon =>
-        // {
-        //     if (_pokemon.is_baby)
-        //     {
-                
-        //     }
-        // })
     }
 }

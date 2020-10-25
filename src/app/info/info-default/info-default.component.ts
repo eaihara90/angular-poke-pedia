@@ -1,21 +1,22 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Pokemon } from '../../interfaces/pokemon.interface';
 
-@Component({
+@Component(
+{
     selector: 'poke-info-default',
     templateUrl: './info-default.component.html',
     styleUrls: ['./info-default.component.scss']
 })
-export class InfoDefaultComponent implements OnInit {
+export class InfoDefaultComponent implements OnInit
+{
 
-    public isOpen: boolean = false;
     @Input() pokemon: Pokemon;
     @Output() openClose = new EventEmitter<boolean>();
+    public isOpen: boolean = false;
 
     constructor() { }
 
-    ngOnInit(): void {
-    }
+    ngOnInit(): void { }
 
     public showMoreInfo()
     {

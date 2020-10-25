@@ -4,7 +4,6 @@ import { Subscription } from 'rxjs';
 import { PokemonService } from '../shared/services/pokemon.service';
 import { PokeInfoService } from '../shared/services/poke-info.service';
 import { Pokemon } from '../interfaces/pokemon.interface';
-import { trigger, style, animate, state, transition } from '@angular/animations';
 
 @Component(
 {
@@ -14,9 +13,9 @@ import { trigger, style, animate, state, transition } from '@angular/animations'
 })
 export class InfoComponent implements OnInit, OnDestroy
 {
-    public subscription = new Subscription();
-    public pokemon: Pokemon;
     public isOpen: boolean;
+    public pokemon: Pokemon;
+    public subscription = new Subscription();
 
     constructor(private pokemonService: PokemonService, private pokeInfoService: PokeInfoService, private route: ActivatedRoute) { }
 

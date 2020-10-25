@@ -1,13 +1,13 @@
 @import '../../../assets/styles/main.scss';
+
 .info-evolution
 {
-
     align-items: center;
-    background-color: $ice;
     display: flex;
     flex-flow: column nowrap;
     height: 100%;
     justify-content: flex-start;
+    overflow: auto;
     padding: 2rem;
 
     &__header
@@ -16,7 +16,7 @@
         color: $white;
         font-size: 2rem;
         text-align: center;
-        margin: 10% 0 5%;
+        margin: 5% 0 5%;
         width: 100%;
 
         & h3
@@ -28,6 +28,7 @@
     &__chain
     {
 
+        margin-bottom: 4rem;
 
         &-step
         {
@@ -64,10 +65,7 @@
                 }
             }
 
-            &--level
-            {
-                font-weight: 600;
-            }
+           
 
             & .fa-arrow-down
             {
@@ -78,20 +76,24 @@
                 width: 2.5rem;
             }
         }
+
+        & .no-evolution
+        {
+            & p
+            {
+                font-size: 3rem;
+                font-weight: 600;
+                letter-spacing: 1.5;
+                text-align: center;
+            }
+        }
     }
 
-
-    &__types
+    &__requirements
     {
-        margin: 10% auto;
+        &--requirement
+        {
+            font-weight: 600;
+        }
     }
-
-    &__type
-    {
-        color: $white;
-        display: block;
-        padding: 1rem 0;
-        text-align: center;
-    }
-    
 }

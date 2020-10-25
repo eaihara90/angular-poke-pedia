@@ -1,4 +1,6 @@
-<div class="info-evolution">
+<div
+    class="info-evolution"
+    [ngClass]="pokemon?.types[0]?.type?.name + '-type-solid'">
 
     <div class="info-evolution__header">
         <h3>Evoluções</h3>
@@ -8,17 +10,38 @@
 
         <ng-container *ngIf="evolutions.length > 0; else noEvolution">
 
-            <div *ngFor="let evolution of evolutions; let i = index" class="info-evolution__chain-step">
+            <div 
+                *ngFor="let evolution of evolutions; let i = index"
+                class="info-evolution__chain-step">
 
-                <p class="info-evolution__chain-step--name">{{ evolution.name | capitalize }}</p>
+                <p 
+                    class="info-evolution__chain-step--name">
+                    {{ evolution.name | capitalize }}            
+                </p>
 
                 <div class="info-evolution__chain-step--img">
                     <img [src]="evolution.sprite" [alt]="evolution.name">
                 </div>
 
-                <span *ngIf="i > 0" class="info-evolution__chain-step--level">
-                    (Level {{ evolution.min_level }})
-                </span>
+                <div class="info-evolution__requirements">
+                    <span
+                        *ngIf="evolution.min_level != null"
+                        class="info-evolution__requirements--requirement">
+                        Level: {{ evolution.min_level }}
+                    </span>
+
+                    <span
+                        *ngIf="evolution.min_happines && i > 0"
+                        class="info-evolution__requirements--requirement">
+                        Happiness: {{ evolution.min_happines }}
+                    </span>
+
+                    <span 
+                        *ngIf="evolution.item"
+                        class="info-evolution__requirements--requirement">
+                        Item: {{ evolution.item.name | capitalize }}
+                    </span>
+                </div>
 
                 <svg
                     *ngIf="i < evolutions.length - 1"
@@ -29,35 +52,18 @@
                         d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z">
                     </path>
                 </svg>
+
             </div>
 
         </ng-container>
 
-        <ng-template #noEvolution>
-            <div *ngFor="let evolution of evolutions; let i = index" class="info-evolution__chain-step">
-
-                <p class="info-evolution__chain-step--name">{{ evolution.name | capitalize }}</p>
-
-                <div class="info-evolution__chain-step--img">
-                    <img [src]="evolution.sprite" [alt]="evolution.name">
-                </div>
-
-                <span *ngIf="i > 0" class="info-evolution__chain-step--level">
-                    (Level {{ evolution.min_level }})
-                </span>
-
-            </div>
-            
+        <ng-template #noEvolution>          
             <div class="no-evolution">
-                O Pokémon já está em sua forma final.
+
+                <p>O Pokémon já está em sua forma final.</p>
+                
             </div>
         </ng-template>
 
-    </div>
-
-    <div class="info-evolution__types">
-        <span class="info-evolution__type" *ngFor="let type of pokemon.types">
-            {{ type.type.name }}
-        </span>
     </div>
 </div>

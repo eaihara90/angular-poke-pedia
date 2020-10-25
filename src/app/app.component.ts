@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { PokeInfoService } from './shared/services/poke-info.service';
-import { trigger, style, animate, state, transition } from '@angular/animations';
 
 @Component(
 {
@@ -9,10 +8,10 @@ import { trigger, style, animate, state, transition } from '@angular/animations'
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit
+export class AppComponent implements OnInit, OnDestroy
 {
-    private subscription = new Subscription();
     public isOpenPokeInfo: boolean;
+    private subscription = new Subscription();
     
     constructor(private pokeInfoService: PokeInfoService) { }
 
@@ -22,5 +21,10 @@ export class AppComponent implements OnInit
         {
             this.isOpenPokeInfo = isOpen;
         }));
+    }
+
+    ngOnDestroy(): void
+    {
+        this.subscription.unsubscribe();
     }
 }

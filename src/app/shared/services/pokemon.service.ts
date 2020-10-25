@@ -30,11 +30,6 @@ export class PokemonService
         });
     }
 
-    public getPokemonColor(_name: string): Observable<any>
-    {
-        return this.http.get(`${environment.color}${_name}`);
-    }
-
     public searchPokemon(_pokemon: Pokemon)
     {
         this.searchingPokemon.next(_pokemon);

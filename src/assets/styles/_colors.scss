@@ -1,4 +1,4 @@
-$black: #000;
+$black: #222;
 $black-light-1: lighten($black, 20%);
 $black-light-2: lighten($black, 40%);
 $black-light-3: lighten($black, 60%);
@@ -31,3 +31,8 @@ $psychic: #F366B9;
 $rock: #A38C21;
 $steel: #9EB7B8;
 $water: #4592C4;
+
+@function getColorPercent($color, $opacity)
+{
+    @return rgba($color, $opacity);
+}

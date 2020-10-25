@@ -2,16 +2,12 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
-  production: false,
-  pokeApi: 'https://pokeapi.co/api/v2/',
-  name: 'https://pokeapi.co/api/v2/pokemon/',
-  stats: 'https://pokeapi.co/api/v2/stat/',
-  species: 'https://pokeapi.co/api/v2/pokemon-species/',
-  color: 'https://pokeapi.co/api/v2/pokemon-species/'
-  
-
-
+export const environment =
+{
+    production: false,
+    name: 'https://pokeapi.co/api/v2/pokemon/',
+    stats: 'https://pokeapi.co/api/v2/stat/',
+    species: 'https://pokeapi.co/api/v2/pokemon-species/'
 };
 
 /*

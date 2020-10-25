@@ -2,8 +2,8 @@ export class SimpleList
 {
     results:[
     {
-        name: string;
-        url: string;
+        name: string,
+        url: string
     }]
     
 }
