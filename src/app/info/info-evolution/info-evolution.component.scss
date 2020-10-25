@@ -16,7 +16,7 @@
         color: $white;
         font-size: 2rem;
         text-align: center;
-        margin: 10% 0;
+        margin: 10% 0 5%;
         width: 100%;
 
         & h3
@@ -25,24 +25,61 @@
         }
     }
 
-    &__img
+    &__chain
     {
-        border-radius: 50%;
-        background-color: $white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 10% auto;
-        height: 20rem;
-        width: 20rem;
 
-        & img
+
+        &-step
         {
-            display: block;
-            max-width: 100%;
-            object-fit: cover;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+
+
+
+            &--name
+            {
+                font-size: 2rem;
+                font-weight: 600;
+                letter-spacing: 1.2px;
+            }
+
+            &--img
+            {
+                border-radius: 50%;
+                background-color: $white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10% auto;
+                height: 12rem;
+                width: 12rem;
+
+                & img
+                {
+                    display: block;
+                    max-width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &--level
+            {
+                font-weight: 600;
+            }
+
+            & .fa-arrow-down
+            {
+                color: $white;
+                fill: $black;
+                margin: 1rem 0;
+                height: 2.5rem;
+                width: 2.5rem;
+            }
         }
     }
+
 
     &__types
     {

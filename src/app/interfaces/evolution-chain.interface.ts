@@ -2,13 +2,17 @@ export interface EvolutionChain
 {
     chain:
     {
-        
         // Primeira evolução
         evolves_to?: [
         {
             evolution_details: [
             {
-                min_level: number
+                min_level: number,
+                item:
+                {
+                    name?: any;
+                }
+                min_happiness?: number;
             }];
             species: 
             {
@@ -19,7 +23,11 @@ export interface EvolutionChain
             {
                 evolution_details: [
                 {
-                    min_level: number
+                    min_level: number;
+                    item:
+                    {
+                        name?: any;
+                    }
                 }];
                 species: 
                 {
@@ -27,7 +35,7 @@ export interface EvolutionChain
                 };
             }];
         }];
-
+        is_baby: boolean;
         // Primeira evolução - NOME
         species:
         {
