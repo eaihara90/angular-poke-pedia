@@ -11,9 +11,9 @@
                 class="info-status__stat-list--item"
                 *ngFor="let stat of pokemon.stats">
 
-                <span class="info-status__stat-list--label">{{ stat.stat.name | uppercase }} - {{ stat.base_stat }} / 150</span>
+                <span class="info-status__stat-list--label">{{ stat.stat.name | uppercase }} - {{ stat.base_stat }} / 200</span>
 
-                <span class="info-status__stat-list--bar-front" [ngStyle]="{ 'width.%': stat.base_stat / 150 * 100 }"></span>
+                <span class="info-status__stat-list--bar-front" [ngStyle]="{ 'width.%': stat.base_stat / 200 * 100 }"></span>
                 <span class="info-status__stat-list--bar-back"></span>
             </li>
 

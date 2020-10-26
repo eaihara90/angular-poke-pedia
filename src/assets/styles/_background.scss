@@ -1,0 +1,184 @@
+@import 'colors';
+
+.grass-type
+{
+    background-color: getColorPercent($grass, .8) !important;
+}
+
+.ghost-type
+{
+    background-color: getColorPercent($ghost, .8) !important;
+}
+
+.fire-type
+{
+    background-color: getColorPercent($fire, .8) !important;
+}
+
+.water-type
+{
+    background-color: getColorPercent($water, .8) !important;
+}
+
+.steel-type
+{
+    background-color: getColorPercent($steel, .8) !important;
+}
+
+.rock-type
+{
+    background-color: getColorPercent($rock, .8) !important;
+}
+
+.psychic-type
+{
+    background-color: getColorPercent($psychic, .8) !important;
+}
+
+.poison-type
+{
+    background-color: getColorPercent($poison, .8) !important;
+}
+
+.normal-type
+{
+    background-color: getColorPercent($normal, .8) !important;
+}
+
+.ice-type
+{
+    background-color: getColorPercent($ice, .8) !important;
+}
+
+.ground-type
+{
+    background-color: getColorPercent($ground-1, .8) !important;
+}
+
+.flying-type
+{
+    background-color: getColorPercent($flying-1, .8) !important;
+}
+
+.fighting-type
+{
+    background-color: getColorPercent($fighting, .8) !important;
+}
+
+.fairy-type
+{
+    background-color: getColorPercent($fairy, .8) !important;
+}
+
+.electric-type
+{
+    background-color: getColorPercent($electric, .8) !important;
+}
+
+.dragon-type
+{
+    background-color: getColorPercent($dragon-1, .8) !important;
+}
+
+.dark-type
+{
+    background-color: getColorPercent($dark, .8) !important;
+}
+
+.bug-type
+{
+    background-color: getColorPercent($bug, .8) !important;
+}
+
+
+// 
+
+.grass-type-solid
+{
+    background-color: getColorPercent($grass, 1) !important;
+}
+
+.ghost-type-solid
+{
+    background-color: getColorPercent($ghost, 1) !important;
+}
+
+.fire-type-solid
+{
+    background-color: getColorPercent($fire, 1) !important;
+}
+
+.water-type-solid
+{
+    background-color: getColorPercent($water, 1) !important;
+}
+
+.steel-type-solid
+{
+    background-color: getColorPercent($steel, 1) !important;
+}
+
+.rock-type-solid
+{
+    background-color: getColorPercent($rock, 1) !important;
+}
+
+.psychic-type-solid
+{
+    background-color: getColorPercent($psychic, 1) !important;
+}
+
+.poison-type-solid
+{
+    background-color: getColorPercent($poison, 1) !important;
+}
+
+.normal-type-solid
+{
+    background-color: getColorPercent($normal, 1) !important;
+}
+
+.ice-type-solid
+{
+    background-color: getColorPercent($ice, 1) !important;
+}
+
+.ground-type-solid
+{
+    background-color: getColorPercent($ground-1, 1) !important;
+}
+
+.flying-type-solid
+{
+    background-color: getColorPercent($flying-1, 1) !important;
+}
+
+.fighting-type-solid
+{
+    background-color: getColorPercent($fighting, 1) !important;
+}
+
+.fairy-type-solid
+{
+    background-color: getColorPercent($fairy, 1) !important;
+}
+
+.electric-type-solid
+{
+    background-color: getColorPercent($electric, 1) !important;
+}
+
+.dragon-type-solid
+{
+    background-color: getColorPercent($dragon-1, 1) !important;
+}
+
+.dark-type-solid
+{
+    background-color: getColorPercent($dark, 1) !important;
+}
+
+.bug-type-solid
+{
+    background-color: getColorPercent($bug, 1) !important;
+}

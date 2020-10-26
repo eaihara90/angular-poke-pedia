@@ -1,14 +1,31 @@
 <div class="info-detail" *ngIf="pokemon">
     
-    <div class="info-detail__evolution" *ngIf="isOpen" [ngClass]="{ 'opened' : isOpen }">
+    <div 
+        class="info-detail__evolution" 
+        *ngIf="isOpen" 
+        [ngClass]="{ 'opened' : isOpen }">
+
         <poke-info-evolution [pokemon]="pokemon"></poke-info-evolution>
     </div>
     
-    <div class="info-detail__status" *ngIf="isOpen" [ngClass]="{ 'opened' : isOpen }">
+
+    <div 
+        class="info-detail__status" 
+        *ngIf="isOpen" 
+        [ngClass]="{ 'opened' : isOpen }">
+
         <poke-info-status [pokemon]="pokemon"></poke-info-status>
     </div>
 
-    <div class="info-detail__default" [ngClass]="{ 'opened' : isOpen }">
-        <poke-info-default [pokemon]="pokemon" (openClose)="showMoreInfo($event)"></poke-info-default>
+
+    <div 
+        class="info-detail__default" 
+        [ngClass]="{ 'opened' : isOpen }">
+
+        <poke-info-default 
+            [pokemon]="pokemon" 
+            (openClose)="showMoreInfo($event)">
+        </poke-info-default>
     </div>
+
 </div>

@@ -15,10 +15,10 @@ import { RouterModule } from '@angular/router';
 import { ListItemComponent } from './list/list-item/list-item.component';
 import { CapitalizePipe } from './shared/pipes/capitalize.pipe';
 import { DefaultIdLengthPipe } from './shared/pipes/default-id-length.pipe';
-import { BgColorDirective } from './shared/directives/bg-color.directive';
 import { InfoStatusComponent } from './info/info-status/info-status.component';
 import { InfoDefaultComponent } from './info/info-default/info-default.component';
 import { InfoEvolutionComponent } from './info/info-evolution/info-evolution.component';
+import { NotificationComponent } from './shared/components/notification/notification.component';
 
 
 
@@ -33,10 +33,10 @@ import { InfoEvolutionComponent } from './info/info-evolution/info-evolution.com
         ListItemComponent,
         CapitalizePipe,
         DefaultIdLengthPipe,
-        BgColorDirective,
         InfoStatusComponent,
         InfoDefaultComponent,
-        InfoEvolutionComponent
+        InfoEvolutionComponent,
+        NotificationComponent
 
     ],
     imports: [

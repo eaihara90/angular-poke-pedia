@@ -13,14 +13,14 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ListComponent implements OnInit, OnDestroy
 {
-    private subscription = new Subscription();
-    private LIMIT: number = 9;
-    private loadedTimes: number;
     public isLoading: boolean;
     public pokemonList: Pokemon[] = [];
+    private LIMIT: number = 9;
+    private loadedTimes: number;
+    private subscription = new Subscription();
     
 
-    constructor(private pokemonService: PokemonService, private router: Router, private route: ActivatedRoute) { }
+    constructor(private pokemonService: PokemonService, private router: Router) { }
 
     ngOnInit(): void
     {
@@ -73,11 +73,11 @@ export class ListComponent implements OnInit, OnDestroy
 
         const offset = this.loadedTimes * 9;        
 
-        this.pokemonService.getPokemonList(offset, this.LIMIT).subscribe((_pokemonList: SimpleList) =>
+        this.subscription.add(this.pokemonService.getPokemonList(offset, this.LIMIT).subscribe((_pokemonList: SimpleList) =>
         {
             this.loadList(_pokemonList);
             this.loadedTimes++;
             this.isLoading = !this.isLoading;
-        })
+        }));
     }
 }

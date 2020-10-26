@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
-@Component({
-  selector: 'poke-whos-that',
-  templateUrl: './whos-that.component.html',
-  styleUrls: ['./whos-that.component.scss']
+@Component(
+{
+    selector: 'poke-whos-that',
+    templateUrl: './whos-that.component.html',
+    styleUrls: ['./whos-that.component.scss']
 })
-export class WhosThatComponent implements OnInit {
+export class WhosThatComponent implements OnInit
+{
+    constructor() { }
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+    ngOnInit(): void { }
 
 }

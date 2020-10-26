@@ -1,0 +1,17 @@
+@import '../../../../assets/styles/main';
+
+.error
+{
+    background-color: $fire;
+    color: $white;
+    font-size: 2rem;
+    padding: 1.5rem;
+    position: fixed;
+    top: 2rem;
+    right: 0;
+
+    & p
+    {
+        color: $white;
+    }
+}
