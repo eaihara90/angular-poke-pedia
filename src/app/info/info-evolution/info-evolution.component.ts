@@ -121,7 +121,16 @@ export class InfoEvolutionComponent implements OnInit, OnDestroy
 
     private createEvolution(_id: number, _name: string, _spriteUrl: string, _min_level: number, _isBaby: boolean, _item?: any, _min_happiness?: any): Evolution
     {
-        const newEvolution: Evolution = { id: _id, name: _name, sprite: _spriteUrl, min_level: _min_level, is_baby: _isBaby, item:_item, min_happines: _min_happiness };
+        const newEvolution: Evolution =
+        {
+            id: _id,
+            name: _name,
+            sprite: _spriteUrl,
+            min_level: _min_level,
+            is_baby: _isBaby,
+            item:_item,
+            min_happiness: _min_happiness
+        };
 
         return newEvolution;
     }
@@ -129,8 +138,6 @@ export class InfoEvolutionComponent implements OnInit, OnDestroy
     private sortEvolutions(): void
     {
         this.evolutions.sort((p1, p2) => p1.id - p2.id);
-    
-        
 
         if(this.evolutions[0].is_baby)
         {
@@ -138,11 +145,11 @@ export class InfoEvolutionComponent implements OnInit, OnDestroy
 
             const babyPokemon = babyPokemonList[0];
 
-            const happines = babyPokemon.min_happines;
+            const happines = babyPokemon.min_happiness;
 
             this.evolutions.unshift(babyPokemon);
 
-            this.evolutions[1].min_happines = happines;
+            this.evolutions[1].min_happiness = happines;
         }
     }
 }

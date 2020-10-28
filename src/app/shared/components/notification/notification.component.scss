@@ -1,10 +1,12 @@
 @import '../../../../assets/styles/main';
 
-.error
+.notification
 {
-    background-color: $fire;
+    
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     color: $white;
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding: 1.5rem;
     position: fixed;
     top: 2rem;
@@ -13,5 +15,15 @@
     & p
     {
         color: $white;
+    }
+
+    &.error
+    {
+        background-color: $fire;
+    }
+
+    &.success
+    {
+        background-color: $grass;
     }
 }

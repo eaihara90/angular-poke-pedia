@@ -19,7 +19,7 @@ export class PokemonService
 
     public getPokemonByName(_name: string): Observable<Pokemon>
     {
-        return this.http.get<Pokemon>(`${environment.name}${_name}`);
+        return this.http.get<Pokemon>(`${environment.name}${_name.toLowerCase()}`);
     }
 
     public getPokemonList(_offset: number, _limit: number): Observable<SimpleList>    

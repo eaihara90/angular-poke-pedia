@@ -6,5 +6,5 @@ export interface Evolution
     min_level: number,
     is_baby: boolean,
     item?: { name: string },
-    min_happines: number
+    min_happiness: number
 }

@@ -1,5 +1,5 @@
-<div class="error">
-
-    <p>{{ errorMessage }}</p>
+<div class="notification" [ngClass]="notificationData ? notificationData.type : ''" [@notification-visibility]="visibility">
+        
+    <p>{{ notificationData?.message }}</p>
 
 </div>
